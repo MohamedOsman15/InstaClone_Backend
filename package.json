@@ -1,0 +1,32 @@
+{
+  "name": "InstaClone_Backend",
+  "version": "1.0.0",
+  "description": "[Link to Front-End](https://github.com/MohamedOsman15/InstaClone)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedOsman15/InstaClone_Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohamedOsman15/InstaClone_Backend/issues"
+  },
+  "homepage": "https://github.com/MohamedOsman15/InstaClone_Backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "sequelize": "^6.27.0"
+  }
+}
