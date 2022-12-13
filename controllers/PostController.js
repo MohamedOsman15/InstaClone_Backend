@@ -23,9 +23,10 @@ const CreatePost = async (req, res) => {
         const post = await Post.create({
             ...req.body
         })
+        console.log(post)
         res.send(post)
     } catch (error) {
-        throw error
+        console.log(error)
     }
 }
 
