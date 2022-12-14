@@ -14,7 +14,7 @@ const GetUserById = async (req, res) => {
     const user = await User.findAll({
       where: {id: req.params.user_id}
     })
-    res.send(user)
+    res.send(user.displayName)
   } catch (error) {
     throw error
   }

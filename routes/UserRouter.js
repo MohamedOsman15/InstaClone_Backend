@@ -20,8 +20,6 @@ Router.put(
 )
 Router.get(
   '/:user_id',
-  middleware.stripToken,
-  middleware.verifyToken,
   userController.GetUserById
 )
 Router.delete('/:user_id', userController.DeleteUser)
