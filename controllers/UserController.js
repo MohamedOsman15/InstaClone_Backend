@@ -9,6 +9,17 @@ const GetAllUsers = async (req, res) => {
   }
 }
 
+const GetUserById = async (req, res) => {
+  try {
+    const user = await User.findAll({
+      where: {id: req.params.user_id}
+    })
+    res.send(user)
+  } catch (error) {
+    throw error
+  }
+}
+
 const CreateUser = async (req, res) => {
   try {
     let userBody = { ...req.body }
@@ -44,6 +55,7 @@ const DeleteUser = async (req, res) => {
 
 module.exports = {
   GetAllUsers,
+  GetUserById,
   CreateUser,
   UpdateUser,
   DeleteUser
