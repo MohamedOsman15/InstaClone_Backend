@@ -25,6 +25,7 @@ const GetCommentsByPost = async (req, res) => {
         const comments = await Comment.findAll({
             where: {postId: req.params.post_id}
         })
+        res.send(comments)
     } catch(error) {
         throw error
     }
