@@ -3,8 +3,8 @@ const controller = require('../controllers/CommentController')
 const middleware = require('../middleware')
 
 Router.get('/', controller.GetAllComments)
-Router.get('/:user_id', controller.GetCommentsByUser)
-Router.get('/:post_id', controller.GetCommentsByPost)
+Router.get('/user/:user_id', controller.GetCommentsByUser)
+Router.get('/post/:post_id', controller.GetCommentsByPost)
 Router.post(
     '/',
     middleware.stripToken,
