@@ -6,8 +6,6 @@ Router.get('/', controller.GetAllPosts)
 Router.get('/:user_id', controller.getPostsByUser)
 Router.post(
     '/',
-    middleware.stripToken,
-    middleware.verifyToken,
     controller.CreatePost
 )
 Router.delete(
